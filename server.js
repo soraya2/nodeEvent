@@ -10,9 +10,10 @@ var app = express();
 
 var routes = require('./app/index.js');
 
+app.use(routes);
 app.listen(port, host);
 // app,action
 
-app.use(routes);
+
 console.log('server started on port 127.0.0.1:8080');
 
