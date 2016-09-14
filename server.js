@@ -2,9 +2,9 @@
 // var hoisting javascript door var functions te gebruiken zorg je ervoor dat je de functie altijd kan gebruiken omdat het als variable gezien wordt
 // var host = '0.0.0.0'; Heroku
 var express = require('express');
-
-var host = '127.0.0.1';
-var port = '8080';
+// local ip
+var host = process.env.HOST || '0.0.0.0';
+var port = process.env.PORT || '8080';
 
 var app = express();
 
